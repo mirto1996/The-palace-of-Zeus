@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Windows.Media.SpeechSynthesis;
+using System.Data.SQLite;
 namespace The_palace_of_Zeus
 {
     public partial class WelcomePage : Form
@@ -35,5 +36,6 @@ namespace The_palace_of_Zeus
             Environment.Exit(0);
 
         }
+
     }
 }
