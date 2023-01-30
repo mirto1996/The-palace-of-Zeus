@@ -16,5 +16,10 @@ namespace The_palace_of_Zeus
         {
             InitializeComponent();
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

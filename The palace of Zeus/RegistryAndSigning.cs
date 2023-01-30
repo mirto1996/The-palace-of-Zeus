@@ -17,6 +17,7 @@ namespace The_palace_of_Zeus
         string dbcon = @"Data Source=ZEUS.db;Version=3;";
         string path = "ZEUS.db";
         string cs = @"URI=file:" + Application.StartupPath + "\\ZEUS.db";
+        SQLiteConnection sqlite_conn;
         public RegistryAndSigning()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace The_palace_of_Zeus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SQLiteConnection sqlite_conn = new SQLiteConnection(cs);
+             sqlite_conn = new SQLiteConnection(cs);
             
 
            
@@ -68,6 +69,40 @@ namespace The_palace_of_Zeus
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SQLiteCommand cmd2 = new SQLiteCommand(sqlite_conn);      
+            cmd2.CommandText = "SELECT * FROM  customers WHERE USERNAME='" + textBox1.Text + "' AND PASSWORD='" + textBox2.Text + "'";
+            bool flag = true;
+            SQLiteDataReader dr1;
+            try { 
+                dr1 = cmd2.ExecuteReader();
+                flag = false;
+                while (dr1.Read())
+                {
+                    if (dr1["USERNAME"].ToString() == textBox1.Text && dr1["PASSWORD"].ToString() == textBox2.Text)
+                    {
+                        flag = true;
+                        this.Hide();
+                        MainMenu main_menu = new MainMenu();
+                        main_menu.Show();
+                    }
+                }
+                if (flag == false)
+                {
+                    MessageBox.Show("Μη έγκυρο username ή Password");
+                }
+                dr1.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Μη έγκυρο username ή Password");
+            }
+
+          
+            
         }
     }
 }
