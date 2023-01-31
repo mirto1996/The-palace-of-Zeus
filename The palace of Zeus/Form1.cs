@@ -26,5 +26,15 @@ namespace The_palace_of_Zeus
         {
             MessageBox.Show("Ολοκλήρωση αδειάσματος σε δέκα λεπτά");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
