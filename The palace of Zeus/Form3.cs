@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using The_palace_of_Zeus;
 
 namespace The_palace_of_Zeus
 {
@@ -15,6 +16,16 @@ namespace The_palace_of_Zeus
         public Form3()
         {
             InitializeComponent();
+        }
+
+        private void BtnFill_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ολοκλήρωση γεμίσματος σε δέκα λεπτά");
+        }
+
+        private void Evacuate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ολοκλήρωση αδειάσματος σε δέκα λεπτά");
         }
     }
 }

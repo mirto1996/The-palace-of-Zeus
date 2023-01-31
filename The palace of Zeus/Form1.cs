@@ -16,5 +16,15 @@ namespace The_palace_of_Zeus
         {
             InitializeComponent();
         }
+
+        private void BtnFill_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ολοκλήρωση γεμίσματος σε δέκα λεπτά");
+        }
+
+        private void Evacuate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ολοκλήρωση αδειάσματος σε δέκα λεπτά");
+        }
     }
 }
