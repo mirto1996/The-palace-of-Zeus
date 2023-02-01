@@ -64,7 +64,9 @@ namespace The_palace_of_Zeus
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Μόλις κάνατε εγγραφή στην εφαρμογή του Παλατιού του Δία");
+
                 flag = false;  
+
             }
 
         }
