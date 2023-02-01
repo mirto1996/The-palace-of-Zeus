@@ -27,13 +27,42 @@ namespace The_palace_of_Zeus
             MessageBox.Show("Ολοκλήρωση αδειάσματος σε δέκα λεπτά");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox3.Checked)
+            {
+                MessageBox.Show("Τα φώτα άνοιξαν");
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                MessageBox.Show("Τα φώτα έκλεισαν");
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                MessageBox.Show("Ο Συναργεμός ενεργοποιήθηκε");
+            }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked)
+            {
+                MessageBox.Show("Ο Συναργεμός απενεργοποιήθηκε");
+                
+            }
 
         }
     }
