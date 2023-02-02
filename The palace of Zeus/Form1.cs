@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.UI.Xaml.Documents;
+using System.Windows.Forms;
+
 
 namespace The_palace_of_Zeus
 {
     public partial class Form1 : Form
     {
+        private bool isPoolOccupied = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -61,9 +66,31 @@ namespace The_palace_of_Zeus
             if (checkBox4.Checked)
             {
                 MessageBox.Show("Ο Συναργεμός απενεργοποιήθηκε");
-                
-            }
 
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked)
+            {
+                MessageBox.Show("Ο αισθητήρας ενεργοποιήθηκε");
+            }
+            else
+            {
+                MessageBox.Show("Ο αισθητήρας απενεργοποιήθηκε");
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
