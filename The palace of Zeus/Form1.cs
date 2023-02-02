@@ -68,11 +68,8 @@ namespace The_palace_of_Zeus
                 MessageBox.Show("Ο Συναργεμός απενεργοποιήθηκε");
 
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (checkBox5.Checked)
+        
+            if (checkBox6.Checked)
             {
                 MessageBox.Show("Ο αισθητήρας ενεργοποιήθηκε");
             }

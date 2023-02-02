@@ -66,8 +66,19 @@ namespace The_palace_of_Zeus
             if (checkBox4.Checked)
             {
                 MessageBox.Show("Ο Συναργεμός απενεργοποιήθηκε");
+
+            }
+
+            if (checkBox5.Checked)
+            {
+                MessageBox.Show("Ο αισθητήρας ενεργοποιήθηκε");
+            }
+            else
+            {
+                MessageBox.Show("Ο αισθητήρας απενεργοποιήθηκε");
             }
         }
-
     }
 }
+
+
