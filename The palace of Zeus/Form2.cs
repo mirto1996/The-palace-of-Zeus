@@ -22,7 +22,7 @@ namespace The_palace_of_Zeus
             {
                 MessageBox.Show("Τα φώτα άνοιξαν");
             }
-            else
+            if (checkBox2.Checked)
             {
                 MessageBox.Show("Τα φώτα έσβησαν");
             }
@@ -34,7 +34,7 @@ namespace The_palace_of_Zeus
             {
                 MessageBox.Show("Το air-condition ενεργοποίηθηκε");
             }
-            else
+            if (checkBox4.Checked)
             {
                 MessageBox.Show("Το air-condition απενεργοποιήθηκε");
             }
@@ -46,7 +46,7 @@ namespace The_palace_of_Zeus
             {
                 MessageBox.Show("Η TV άνοιξε");
             }
-            else
+            if (checkBox6.Checked)
             {
                 MessageBox.Show("Η TV απενεργοποιήθηκε");
             }
@@ -58,7 +58,7 @@ namespace The_palace_of_Zeus
             {
                 MessageBox.Show("Το radio άνοιξε");
             }
-            else
+            if (checkBox8.Checked)
             {
                 MessageBox.Show("Το radio έκλεισε");
             }

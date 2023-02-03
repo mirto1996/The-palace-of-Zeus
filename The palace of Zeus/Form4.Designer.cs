@@ -66,18 +66,20 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 1);
+            this.panel1.Location = new System.Drawing.Point(4, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(229, 621);
+            this.panel1.Size = new System.Drawing.Size(327, 1035);
             this.panel1.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(9, 230);
+            this.label5.Location = new System.Drawing.Point(13, 383);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 17);
+            this.label5.Size = new System.Drawing.Size(230, 28);
             this.label5.TabIndex = 13;
             this.label5.Text = "Θερμοκρασία δωματίου";
             // 
@@ -85,9 +87,10 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox8.Location = new System.Drawing.Point(115, 467);
+            this.checkBox8.Location = new System.Drawing.Point(164, 778);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(49, 21);
+            this.checkBox8.Size = new System.Drawing.Size(73, 32);
             this.checkBox8.TabIndex = 12;
             this.checkBox8.Text = "OFF";
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -96,9 +99,10 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox7.Location = new System.Drawing.Point(3, 467);
+            this.checkBox7.Location = new System.Drawing.Point(4, 778);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(47, 21);
+            this.checkBox7.Size = new System.Drawing.Size(68, 32);
             this.checkBox7.TabIndex = 11;
             this.checkBox7.Text = "ON";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -107,9 +111,10 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox6.Location = new System.Drawing.Point(124, 367);
+            this.checkBox6.Location = new System.Drawing.Point(177, 612);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(49, 21);
+            this.checkBox6.Size = new System.Drawing.Size(73, 32);
             this.checkBox6.TabIndex = 10;
             this.checkBox6.Text = "OFF";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -118,9 +123,10 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox5.Location = new System.Drawing.Point(3, 367);
+            this.checkBox5.Location = new System.Drawing.Point(4, 612);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(47, 21);
+            this.checkBox5.Size = new System.Drawing.Size(68, 32);
             this.checkBox5.TabIndex = 9;
             this.checkBox5.Text = "ON";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -129,9 +135,10 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox4.Location = new System.Drawing.Point(115, 169);
+            this.checkBox4.Location = new System.Drawing.Point(164, 282);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(49, 21);
+            this.checkBox4.Size = new System.Drawing.Size(73, 32);
             this.checkBox4.TabIndex = 8;
             this.checkBox4.Text = "OFF";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -140,9 +147,10 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(9, 169);
+            this.checkBox3.Location = new System.Drawing.Point(13, 282);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(47, 21);
+            this.checkBox3.Size = new System.Drawing.Size(68, 32);
             this.checkBox3.TabIndex = 7;
             this.checkBox3.Text = "ON";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -151,9 +159,10 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(115, 66);
+            this.checkBox2.Location = new System.Drawing.Point(164, 110);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(49, 21);
+            this.checkBox2.Size = new System.Drawing.Size(73, 32);
             this.checkBox2.TabIndex = 6;
             this.checkBox2.Text = "OFF";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -162,27 +171,30 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(9, 66);
+            this.checkBox1.Location = new System.Drawing.Point(13, 110);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(47, 21);
+            this.checkBox1.Size = new System.Drawing.Size(68, 32);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "ON";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(9, 260);
+            this.numericUpDown1.Location = new System.Drawing.Point(13, 433);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
+            this.numericUpDown1.Size = new System.Drawing.Size(171, 31);
             this.numericUpDown1.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(3, 426);
+            this.label4.Location = new System.Drawing.Point(4, 710);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 17);
+            this.label4.Size = new System.Drawing.Size(63, 28);
             this.label4.TabIndex = 3;
             this.label4.Text = "Radio";
             // 
@@ -190,9 +202,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(9, 327);
+            this.label3.Location = new System.Drawing.Point(13, 545);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 17);
+            this.label3.Size = new System.Drawing.Size(34, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "TV";
             // 
@@ -200,9 +213,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(3, 120);
+            this.label2.Location = new System.Drawing.Point(4, 200);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 17);
+            this.label2.Size = new System.Drawing.Size(129, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Air-condition";
             // 
@@ -210,29 +224,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(9, 19);
+            this.label1.Location = new System.Drawing.Point(13, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.Size = new System.Drawing.Size(65, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Φώτα";
             // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(429, 132);
+            this.panel2.Location = new System.Drawing.Point(613, 220);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 300);
+            this.panel2.Size = new System.Drawing.Size(620, 500);
             this.panel2.TabIndex = 1;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 634);
+            this.ClientSize = new System.Drawing.Size(1417, 1050);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Διαχείριση Δούρειου ίππου";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
