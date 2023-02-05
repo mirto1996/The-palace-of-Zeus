@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Timer = System.Windows.Forms.Timer;
 
 namespace The_palace_of_Zeus
 {
@@ -44,16 +45,21 @@ namespace The_palace_of_Zeus
             else
             {
                 MessageBox.Show("Επεξεργασία πληρωμής ...");
-                int milliseconds = 4000;
+                int milliseconds = 2000;
                 Thread.Sleep(milliseconds);
                 MessageBox.Show("Επιτυχία!!! περιμέντε να παραλάβετε τα προιόντα σας");
+                this.Close();
+                MainMenu Y = new MainMenu(username);
+                Y.Show();
             }
         }
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            BAR Y = new BAR(username);
+            MainMenu Y = new MainMenu(username);
             Y.Show();
         }
     }

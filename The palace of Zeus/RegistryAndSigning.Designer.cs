@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +129,18 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Κωδικός Πρόσβασης";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Location = new System.Drawing.Point(915, 573);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(189, 35);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Κλείσιμο";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // RegistryAndSigning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -136,6 +149,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1117, 620);
             this.ControlBox = false;
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -158,5 +172,6 @@
         private Label label1;
         private GroupBox groupBox1;
         private Label label2;
+        private Button button4;
     }
 }

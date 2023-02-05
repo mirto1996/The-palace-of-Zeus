@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace The_palace_of_Zeus
     public partial class Form2 : Form
     {
         public string username;
+        string cs = @"URI=file:" + Application.StartupPath + "\\ZEUS.db";
+        SQLiteConnection sqlite_conn;
         public Form2(string name)
         {
             InitializeComponent();
@@ -81,6 +84,26 @@ namespace The_palace_of_Zeus
             this.Close();
             MainMenu main_menu = new MainMenu(username);
             main_menu.Show();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            sqlite_conn = new SQLiteConnection(cs);
+            sqlite_conn.Open();
+            SQLiteCommand cmd = new SQLiteCommand(sqlite_conn);
+            SQLiteDataReader dr;
+            cmd.CommandText = "SELECT * FROM  customers WHERE USERNAME='" + username + "'";
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                if (dr["USERNAME"].ToString() == username)
+                {
+
+                    label6.Text = "Δωμάτιο: No " + dr["ID"].ToString();
+                    break;
+                }
+            }
+            dr.Close();
         }
     }
 }

@@ -58,5 +58,12 @@ namespace The_palace_of_Zeus
             PisineSelection f= new PisineSelection(username);  
             f.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            RegistryAndSigning x = new RegistryAndSigning();
+            x.Show();
+        }
     }
 }

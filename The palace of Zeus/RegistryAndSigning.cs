@@ -154,5 +154,10 @@ namespace The_palace_of_Zeus
         {
             textBox2.PasswordChar = ' ';
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

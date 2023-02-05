@@ -45,6 +45,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -226,6 +227,17 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Επιλέξατε :";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(30, 531);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 28);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Επιλέξατε :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // BAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -233,6 +245,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1104, 595);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button14);
@@ -276,5 +289,6 @@
         private Button button14;
         private Label label1;
         private Label label2;
+        private Label label3;
     }
 }
