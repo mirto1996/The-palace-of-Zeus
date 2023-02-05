@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace The_palace_of_Zeus
 {
+    
     public partial class MainMenu : Form
     {
         public string username;
@@ -32,9 +33,30 @@ namespace The_palace_of_Zeus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();   
-            BAR C= new BAR();
+            this.Hide();   
+            BAR C= new BAR(username);
             C.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 X = new Form2(username);
+            X.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 Y = new Form4(username);
+            Y.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PisineSelection f= new PisineSelection(username);  
+            f.Show();
         }
     }
 }

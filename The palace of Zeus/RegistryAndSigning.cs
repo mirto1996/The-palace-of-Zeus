@@ -13,8 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace The_palace_of_Zeus
 {
+   
     public partial class RegistryAndSigning : Form
     {
+        
         string dbcon = @"Data Source=ZEUS.db;Version=3;";
         string path = "ZEUS.db";
         string cs = @"URI=file:" + Application.StartupPath + "\\ZEUS.db";
@@ -67,6 +69,7 @@ namespace The_palace_of_Zeus
 
                 flag = false;  
 
+
             }
 
         }
@@ -94,6 +97,7 @@ namespace The_palace_of_Zeus
                 {
                     flag = true;
                     this.Hide();
+
                     MainMenu main_menu = new MainMenu(textBox1.Text);
                     main_menu.Show();
                     MessageBox.Show("Καλώς ήρθατε στην εφαρμογή");

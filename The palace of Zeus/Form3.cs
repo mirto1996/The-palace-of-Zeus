@@ -13,9 +13,11 @@ namespace The_palace_of_Zeus
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public string username;
+        public Form3(string name)
         {
             InitializeComponent();
+            this.username = name;
         }
 
         private void BtnFill_Click(object sender, EventArgs e)
@@ -77,6 +79,18 @@ namespace The_palace_of_Zeus
             {
                 MessageBox.Show("Ο αισθητήρας απενεργοποιήθηκε");
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainMenu main_menu = new MainMenu(username);
+            main_menu.Show();
         }
     }
 }

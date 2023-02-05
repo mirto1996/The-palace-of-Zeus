@@ -15,9 +15,11 @@ namespace The_palace_of_Zeus
 {
     public partial class Form4 : Form
     {
-        public Form4()
+        public string username;
+        public Form4(string name)
         {
             InitializeComponent();
+            this.username = name;
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -67,5 +69,16 @@ namespace The_palace_of_Zeus
             }
         }
 
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainMenu main_menu = new MainMenu(username);
+            main_menu.Show();
+        }
     }
 }

@@ -12,9 +12,11 @@ namespace The_palace_of_Zeus
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public string username;
+        public Form2(string name)
         {
             InitializeComponent();
+            this.username = name;
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -64,6 +66,22 @@ namespace The_palace_of_Zeus
             }
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainMenu main_menu = new MainMenu(username);
+            main_menu.Show();
+        }
     }
 }
 
