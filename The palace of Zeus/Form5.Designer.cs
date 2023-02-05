@@ -185,9 +185,11 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(528, 98);
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Location = new System.Drawing.Point(305, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(442, 304);
+            this.panel1.Size = new System.Drawing.Size(814, 534);
             this.panel1.TabIndex = 14;
             // 
             // Form5
@@ -195,6 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 579);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -210,6 +213,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form5";
             this.Text = "Δούρειος ίππος";
             this.ResumeLayout(false);

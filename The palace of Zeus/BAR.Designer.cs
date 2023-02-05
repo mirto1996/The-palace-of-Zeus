@@ -42,14 +42,17 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button1.Location = new System.Drawing.Point(952, 531);
+            this.button1.Location = new System.Drawing.Point(919, 531);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
+            this.button1.Size = new System.Drawing.Size(183, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "ΠΛΗΡΩΜΗ";
             this.button1.UseVisualStyleBackColor = false;
@@ -80,31 +83,33 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.IndianRed;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Location = new System.Drawing.Point(475, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(189, 155);
             this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Location = new System.Drawing.Point(712, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(189, 155);
             this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(12, 208);
+            this.button6.Location = new System.Drawing.Point(12, 173);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(189, 155);
             this.button6.TabIndex = 5;
@@ -116,7 +121,7 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(242, 206);
+            this.button7.Location = new System.Drawing.Point(242, 173);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(189, 155);
             this.button7.TabIndex = 6;
@@ -127,7 +132,7 @@
             // 
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(475, 208);
+            this.button8.Location = new System.Drawing.Point(475, 173);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(189, 155);
             this.button8.TabIndex = 7;
@@ -138,7 +143,7 @@
             // 
             this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(712, 208);
+            this.button9.Location = new System.Drawing.Point(712, 175);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(189, 155);
             this.button9.TabIndex = 8;
@@ -149,7 +154,7 @@
             // 
             this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Location = new System.Drawing.Point(12, 410);
+            this.button10.Location = new System.Drawing.Point(12, 336);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(189, 155);
             this.button10.TabIndex = 9;
@@ -160,7 +165,7 @@
             // 
             this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Location = new System.Drawing.Point(242, 410);
+            this.button11.Location = new System.Drawing.Point(242, 336);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(189, 155);
             this.button11.TabIndex = 10;
@@ -171,7 +176,7 @@
             // 
             this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.Location = new System.Drawing.Point(475, 410);
+            this.button12.Location = new System.Drawing.Point(475, 336);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(189, 155);
             this.button12.TabIndex = 11;
@@ -182,19 +187,55 @@
             // 
             this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.Location = new System.Drawing.Point(712, 410);
+            this.button13.Location = new System.Drawing.Point(712, 336);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(189, 155);
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Red;
+            this.button14.Location = new System.Drawing.Point(919, 12);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(183, 60);
+            this.button14.TabIndex = 13;
+            this.button14.Text = "Επιστροφή";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(551, 533);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 28);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Επιλέξατε :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(420, 533);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 28);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Επιλέξατε :";
+            // 
             // BAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1104, 595);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
@@ -213,6 +254,7 @@
             this.Text = "BAR";
             this.Load += new System.EventHandler(this.BAR_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -231,5 +273,8 @@
         private Button button11;
         private Button button12;
         private Button button13;
+        private Button button14;
+        private Label label1;
+        private Label label2;
     }
 }

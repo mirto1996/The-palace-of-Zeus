@@ -13,10 +13,12 @@ namespace The_palace_of_Zeus
     public partial class PAY : Form
     {
         public double price;
-        public PAY(double price)
+        public string username;
+        public PAY(double price,string username)
         {
             InitializeComponent();
             this.price = price;
+            this.username = username;
         }
 
         private void PAY_Load(object sender, EventArgs e)
@@ -46,6 +48,13 @@ namespace The_palace_of_Zeus
                 Thread.Sleep(milliseconds);
                 MessageBox.Show("Επιτυχία!!! περιμέντε να παραλάβετε τα προιόντα σας");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            BAR Y = new BAR(username);
+            Y.Show();
         }
     }
 }
