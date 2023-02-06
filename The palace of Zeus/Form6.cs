@@ -16,5 +16,11 @@ namespace The_palace_of_Zeus
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Το μήνυμα σας στάλθηκε επιτυχώς");
+        }
+
     }
 }

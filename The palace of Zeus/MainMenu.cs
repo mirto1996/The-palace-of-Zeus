@@ -65,5 +65,11 @@ namespace The_palace_of_Zeus
             RegistryAndSigning x = new RegistryAndSigning();
             x.Show();
         }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form6 x = new Form6();
+            x.Show();
+        }
     }
 }
