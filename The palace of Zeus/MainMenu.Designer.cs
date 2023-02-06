@@ -79,7 +79,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(543, 521);
+            this.button4.Location = new System.Drawing.Point(557, 509);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(212, 98);
             this.button4.TabIndex = 3;

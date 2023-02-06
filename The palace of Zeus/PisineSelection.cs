@@ -13,16 +13,18 @@ namespace The_palace_of_Zeus
     public partial class PisineSelection : Form
     {
         public string username;
-        public PisineSelection(string name)
+        public int id;
+        public PisineSelection(string name,int id)
         {
             InitializeComponent();
             this.username = name;
+            this.id = id;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 p = new Form1(username);
+            Form1 p = new Form1(username,id);
             p.Show();
         }
 

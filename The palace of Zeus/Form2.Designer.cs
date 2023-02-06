@@ -80,11 +80,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(17, 630);
+            this.button1.Location = new System.Drawing.Point(6, 616);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 34);
+            this.button1.Size = new System.Drawing.Size(283, 57);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Επιβεβαίωση";
+            this.button1.Text = "Επιβεβαίωση θερμοκρασίας";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -101,7 +101,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(17, 670);
+            this.button3.Location = new System.Drawing.Point(9, 679);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 60);

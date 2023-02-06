@@ -235,6 +235,7 @@ namespace The_palace_of_Zeus
             SQLiteCommand cmd = new SQLiteCommand(sqlite_conn);
             cmd.CommandText = "UPDATE ROOMS SET TEMP=" + numericUpDown1.Value.ToString() + " WHERE ID=" + number + "";
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Οι επιλογές επιβεβαιώθηκαν");
         }
     }
 }

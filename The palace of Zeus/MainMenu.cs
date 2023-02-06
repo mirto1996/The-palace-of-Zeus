@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,13 @@ namespace The_palace_of_Zeus
     
     public partial class MainMenu : Form
     {
-        public string username;
 
+        string dbcon = @"Data Source=ZEUS.db;Version=3;";
+        string path = "ZEUS.db";
+        string cs = @"URI=file:" + Application.StartupPath + "\\ZEUS.db";
+        SQLiteConnection sqlite_conn;
+        public string username;
+        public int id;
         public MainMenu(string name)
         {
             InitializeComponent();
@@ -24,6 +30,19 @@ namespace The_palace_of_Zeus
         private void MainMenu_Load(object sender, EventArgs e)
         {
             label2.Text = "ΚΑΛΩΣ ΗΡΘΑΤΕ  " + username ;
+            sqlite_conn = new SQLiteConnection(cs);
+
+
+
+            sqlite_conn.Open();
+            SQLiteCommand cmd = new SQLiteCommand(sqlite_conn);
+            SQLiteDataReader dr;
+            cmd.CommandText = "SELECT ID FROM  customers WHERE USERNAME='" + username  + "'";
+            dr= cmd.ExecuteReader();
+            dr.Read();
+            id = Convert.ToInt32(dr["ID"]);
+            dr.Close();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -55,7 +74,7 @@ namespace The_palace_of_Zeus
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PisineSelection f= new PisineSelection(username);  
+            PisineSelection f= new PisineSelection(username,id);  
             f.Show();
         }
 
