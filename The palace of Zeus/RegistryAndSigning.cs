@@ -46,7 +46,8 @@ namespace The_palace_of_Zeus
             sqlite_conn.Open();
             SQLiteCommand cmd = new SQLiteCommand( sqlite_conn);
             SQLiteCommand cmd1 = new SQLiteCommand(sqlite_conn);
-            SQLiteDataReader dr;
+            SQLiteCommand cmd2 = new SQLiteCommand(sqlite_conn);
+            SQLiteDataReader dr,dr2;
             cmd.CommandText= "INSERT INTO customers(USERNAME,PASSWORD) values('" + textBox1.Text + "','" + textBox2.Text + "')";
             cmd1.CommandText = "SELECT * FROM  customers WHERE USERNAME='"+ textBox1.Text + "'";
             bool flag = true;
@@ -63,15 +64,20 @@ namespace The_palace_of_Zeus
             dr.Close();
             if (flag == true)
             {
+                
                 cmd.ExecuteNonQuery();
-
+                dr2=cmd1.ExecuteReader();
+                dr2.Read();
+                int x = 0;
+                cmd2.CommandText = "INSERT INTO ROOMS(ID,AIRCONDITION,TEMP,TV,RADIO,LIGHTS) values(" + dr2["ID"].ToString() + ",'OFF',"+x.ToString()+",'OFF','OFF','OFF')";
+                cmd2.ExecuteNonQuery();
                 MessageBox.Show("Μόλις κάνατε εγγραφή στην εφαρμογή του Παλατιού του Δία");
 
                 flag = false;  
 
 
             }
-
+            
         }
         
 

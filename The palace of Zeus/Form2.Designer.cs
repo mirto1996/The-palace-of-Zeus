@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label5);
@@ -75,6 +77,16 @@
             this.panel1.Size = new System.Drawing.Size(300, 977);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(17, 630);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 34);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Επιβεβαίωση";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -127,6 +139,7 @@
             this.checkBox8.TabIndex = 11;
             this.checkBox8.Text = "OFF";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -137,6 +150,7 @@
             this.checkBox7.TabIndex = 10;
             this.checkBox7.Text = "ON";
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -147,6 +161,7 @@
             this.checkBox6.TabIndex = 9;
             this.checkBox6.Text = "OFF";
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -157,6 +172,7 @@
             this.checkBox5.TabIndex = 8;
             this.checkBox5.Text = "ON";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // label3
             // 
@@ -174,6 +190,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(180, 31);
             this.numericUpDown1.TabIndex = 6;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label2
             // 
@@ -194,6 +211,7 @@
             this.checkBox4.TabIndex = 4;
             this.checkBox4.Text = "OFF";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -204,6 +222,7 @@
             this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "ON";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -214,6 +233,7 @@
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "OFF";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -224,6 +244,7 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "ON";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label1
             // 
@@ -283,5 +304,6 @@
         private Label label1;
         private Button button3;
         private Label label6;
+        private Button button1;
     }
 }
