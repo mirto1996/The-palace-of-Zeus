@@ -90,5 +90,14 @@ namespace The_palace_of_Zeus
             Form6 x = new Form6();
             x.Show();
         }
-    }
+
+       
+            private void button7_Click(object sender, EventArgs e)
+            {
+                Help.ShowHelp(this, "help.chm");
+            }
+
+        }
 }
+
+
