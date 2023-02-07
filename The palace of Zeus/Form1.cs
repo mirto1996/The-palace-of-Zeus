@@ -131,6 +131,7 @@ namespace The_palace_of_Zeus
                 checkBox1.Checked = true;
             }
             numericUpDown1.Value = Convert.ToInt32(dr["WATERTEMP"]);
+            trackBar1.Value = Convert.ToInt32(dr["WATERLEVEL"]);
             label1.Text = numericUpDown1.Value.ToString() + "°C";
             dr.Close();
         }
@@ -143,7 +144,7 @@ namespace The_palace_of_Zeus
             SQLiteCommand cmd = new SQLiteCommand(sqlite_conn);
             cmd.CommandText = "UPDATE ROOMS SET WATERTEMP=" + numericUpDown1.Value.ToString() + " WHERE ID=" + id.ToString() + "";
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Οι επιλογές θερμοκρασίας επιβεβαιώθηκαν");
+            MessageBox.Show("Οι επιλογές  επιβεβαιώθηκαν");
             SQLiteCommand cmd2 = new SQLiteCommand(sqlite_conn);
             cmd2.CommandText = "UPDATE ROOMS SET WATERLEVEL=" + trackBar1.Value.ToString() + " WHERE ID=" + id.ToString() + "";
             cmd2.ExecuteNonQuery();

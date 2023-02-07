@@ -69,7 +69,7 @@ namespace The_palace_of_Zeus
                 dr2=cmd1.ExecuteReader();
                 dr2.Read();
                 int x = 0;
-                cmd2.CommandText = "INSERT INTO ROOMS(ID,AIRCONDITION,TEMP,TV,RADIO,LIGHTS) values(" + dr2["ID"].ToString() + ",'OFF',"+x.ToString()+",'OFF','OFF','OFF')";
+                cmd2.CommandText = "INSERT INTO ROOMS(ID,AIRCONDITION,TEMP,TV,RADIO,LIGHTS,POOLLIGHTS,ALARM,WATERTEMP,WATERLEVEL,GENERALALARM) values(" + dr2["ID"].ToString() + ",'OFF',"+x.ToString()+",'OFF','OFF','OFF','OFF','OFF',"+25.ToString()+","+0.ToString()+",OFF)";
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("Μόλις κάνατε εγγραφή στην εφαρμογή του Παλατιού του Δία");
 
