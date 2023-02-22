@@ -209,5 +209,24 @@ namespace The_palace_of_Zeus
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "Καλησπέρα, πως μπορώ να σας εξυπηρετήσω;";
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            richTextBox1.AppendText(Environment.NewLine + "Δώστε μου λίγο χρόνο να ελέγξω διαθεσιμότητα");
+        }
+
+        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                btnSend.PerformClick();
+            }
+        }
     }
 }
